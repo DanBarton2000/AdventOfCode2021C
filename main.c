@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "DayOne.h"
 
 int main() {
-    printf("Hello, World!\n");
+    run();
     return 0;
 }
