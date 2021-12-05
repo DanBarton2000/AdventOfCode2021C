@@ -6,7 +6,17 @@
 #include <stdlib.h>
 #include "DayOne.h"
 
-int run()
+void partOne();
+void partTwo();
+FILE * readFile();
+
+void run()
+{
+    partOne();
+    partTwo();
+}
+
+FILE * readFile()
 {
     FILE *file;
     file = fopen("../Files/day1.txt", "r");
@@ -16,6 +26,13 @@ int run()
         perror("Unable to open file");
         exit(1);
     }
+
+    return file;
+}
+
+void partOne()
+{
+    FILE *file = readFile();
 
     char chunk[128];
 
@@ -45,6 +62,10 @@ int run()
     }
 
     printf("%d", counter);
-
-    return 0;
 }
+
+void partTwo()
+{
+    FILE *file = readFile();
+}
+
