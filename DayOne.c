@@ -67,5 +67,17 @@ void partOne()
 void partTwo()
 {
     FILE *file = readFile();
+
+    char chunk[128];
+
+    int aCounter = 0;
+    int bCounter = 0;
+    int cCounter = 0;
+
+
+    while (fgets(chunk, sizeof(chunk), file) != NULL)
+    {
+
+    }
 }
 
